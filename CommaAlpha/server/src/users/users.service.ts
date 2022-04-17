@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { CreateUserInput } from './dto/create-user.input';
 
+// postgresql://doadmin:AVNS_elqGfhkwnu5jQs5@db-postgresql-sgp1-73443-do-user-8511373-0.b.db.ondigitalocean.com:25060/defaultdb
 @Injectable()
 export class UsersService {
   private readonly users = [
