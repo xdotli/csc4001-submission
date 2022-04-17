@@ -1,0 +1,41 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type User {
+  id: Int!
+  email: String!
+}
+
+type Post {
+  id: Int!
+  title: String!
+  paragraphs: [String!]!
+  authorId: Int!
+  author: User!
+  createdAt: Timestamp!
+  scheduledDate: Timestamp
+}
+
+"""
+`Date` type as integer. Type represents date and time as number of milliseconds from start of UNIX epoch.
+"""
+scalar Timestamp
+
+type Query {
+  posts: [Post!]!
+}
+
+type Mutation {
+  createPost(input: CreatePostInput!): Post!
+}
+
+input CreatePostInput {
+  title: String!
+  paragraphs: [String!]!
+  scheduledDate: Timestamp
+}
+
+type Subscription {
+  postAdded: Post!
+}
