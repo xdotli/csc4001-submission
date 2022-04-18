@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "csc4001-1d79a": {
+      "hosting": {
+        "trello-clone": [
+          "trello-minimal-csc4001"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "csc4001-1d79a"
+  }
+}
