@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
 
 const routes: Routes = [
-  { path: '', component: HomePageComponent, canActivate: [AuthGuard] },
+  { path: '', component: HomePageComponent },
   {
     path: 'login',
     loadChildren: () => import('./user/user.module').then((m) => m.UserModule),
@@ -18,7 +18,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    initialNavigation: 'enabledBlocking'
+})],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

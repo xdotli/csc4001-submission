@@ -1,7 +1,7 @@
 {
   "hosting": {
     "target": "trello-clone",
-    "public": "dist/trello-clone",
+    "public": "dist/trello-clone/browser",
     "ignore": [
       "**/.*"
     ],
