@@ -28,3 +28,6 @@ Final version of the deployed app can be found at: https://trello-minimal-csc400
 - [x] Pretty UI: The whole website follows the material ui design and Angular best practices. Also used advanced ui features such as drop-down menus, which shows the redirection url to the admin page. 
 - [x] Server Side Rendering: Generates static html files using SSR and prerending strategies with custom build commands. 
 - [x] Google Sign-In: Implemented with Firebase Authentication Services. 
+
+## Demo
+Check blackboard for gifs for they are too big to upload here. 
