@@ -1,0 +1,14 @@
+services:
+  database:
+    environment:
+      POSTGRESQL_DATABASE_NAME: POSTGRESQL_DATABASE_NAME
+      POSTGRESQL_PORT: POSTGRESQL_PORT
+      POSTGRESQL_PASSWORD: POSTGRESQL_PASSWORD
+      POSTGRESQL_HOST: POSTGRESQL_HOST
+      POSTGRESQL_CONNECTION_URI: POSTGRESQL_CONNECTION_URI
+      POSTGRESQL_USER: POSTGRESQL_USER
+    image: registry.supertokens.io/supertokens/supertokens-postgresql
+    ports:
+    - 3567:3567
+    - 3567:3567
+version: '3'

@@ -8,6 +8,8 @@ import { ChatsModule } from './chats/chats.module';
 import { EmailModule } from './email/email.module';
 import { EmailConfirmationModule } from './email-confirmation/email-confirmation.module';
 import * as Joi from '@hapi/joi';
+import { GraphQLModule } from '@nestjs/graphql';
+import { AuthenticationModule } from './authentication/authentication.module';
 
 @Module({
   imports: [
@@ -21,11 +23,17 @@ import * as Joi from '@hapi/joi';
         PORT: Joi.number(),
       }),
     }),
+    GraphQLModule.forRoot({
+      validationSchema: Joi.object({
+        GRAPHQL_PLAYGROUND: Joi.number(),
+      }),
+    }),
     DatabaseModule,
     UsersModule,
     ChatsModule,
     EmailModule,
     EmailConfirmationModule,
+    AuthenticationModule,
   ],
   controllers: [AppController],
   providers: [AppService],
