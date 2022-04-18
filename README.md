@@ -23,7 +23,7 @@ Final version of the deployed app can be found at: https://trello-minimal-csc400
 - [x] List all users: Implemented with Firestore database. 
 ### Advanced Project Features
 - [x] Project Specific Functionalities: Task and board object drag-and-drop that updates backend database real-time, implemented with Angular CDK, Angular dialog that subscribes to the events and databases, and database service that serves as middleman between frontend and backend. 
-- [x] Deployed on the Cloud: Deployed using Firebase Hosting which can be access at ![here](https://trello-minimal-csc4001.web.app/).
+- [x] Deployed on the Cloud: Containerized with Docker and deployed using Firebase Hosting which can be access at ![here](https://trello-minimal-csc4001.web.app/).
 - [x] Mobile integration: Provided mobile-friendly experiences. 
 - [x] Pretty UI: The whole website follows the material ui design and Angular best practices. Also used advanced ui features such as drop-down menus, which shows the redirection url to the admin page. 
 - [x] Server Side Rendering: Generates static html files using SSR and prerending strategies with custom build commands. 
